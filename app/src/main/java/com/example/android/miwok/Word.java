@@ -20,6 +20,11 @@ public class Word {
      */
     private String mMiwokTranslation;
 
+    /**
+     * Drawable resource ID
+     */
+    private int mImageResourceId;
+
 
     /**
      * Create a new Word object.
@@ -28,9 +33,10 @@ public class Word {
      *                           (such as English)
      * @param miwokTranslation   is the word in the Miwok language
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mImageResourceId = imageResourceId;
     }
 
     /**
@@ -45,5 +51,12 @@ public class Word {
      */
     public String getmMiwokTranslation() {
         return mMiwokTranslation;
+    }
+
+    /**
+     * Get the image resource ID
+     */
+    public int getmImageResourceId() {
+        return mImageResourceId;
     }
 }
