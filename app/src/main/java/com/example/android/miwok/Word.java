@@ -20,18 +20,30 @@ public class Word {
      */
     private String mMiwokTranslation;
 
-    /**
-     * Drawable resource ID
-     */
+    /** Drawable resource ID */
     private int mImageResourceId;
 
-
     /**
-     * Create a new Word object.
+     * Create a Word object to be used for the Phrases activity.
      *
      * @param defaultTranslation is the word in a language that the user is already familiar with
      *                           (such as English)
      * @param miwokTranslation   is the word in the Miwok language
+     */
+    public Word(String defaultTranslation, String miwokTranslation) {
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+    }
+
+    /**
+     * Create a new Word object to be used by the Numbers, Colors and Family Members activity
+     *                             that has an additional input parameter image resource ID used by the activities.
+     *
+     * @param defaultTranslation is the word in a language that the user is already familiar with
+     *                           (such as English)
+     * @param miwokTranslation   is the word in the Miwok language
+     *
+     * @param imageResourceId is the image resource ID displayed for each word
      */
     public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
         mDefaultTranslation = defaultTranslation;
@@ -39,23 +51,17 @@ public class Word {
         mImageResourceId = imageResourceId;
     }
 
-    /**
-     * Get the default translation of the word.
-     */
+    /** Get the default translation of the word */
     public String getmDefaultTranslation() {
         return mDefaultTranslation;
     }
 
-    /**
-     * Get the Miwok translation of the word.
-     */
+    /** Get the Miwok translation of the word */
     public String getmMiwokTranslation() {
         return mMiwokTranslation;
     }
 
-    /**
-     * Get the image resource ID
-     */
+    /** Get the image resource ID */
     public int getmImageResourceId() {
         return mImageResourceId;
     }
