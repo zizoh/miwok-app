@@ -20,8 +20,15 @@ public class Word {
      */
     private String mMiwokTranslation;
 
-    /** Drawable resource ID */
-    private int mImageResourceId;
+    /**
+     * Drawable resource ID for the word
+     */
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    /**
+     * Canstant value that represents no image was provided for this word
+     */
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Create a Word object to be used for the Phrases activity.
@@ -64,5 +71,12 @@ public class Word {
     /** Get the image resource ID */
     public int getmImageResourceId() {
         return mImageResourceId;
+    }
+
+    /**
+     * Returns whether or not there is an iamge for this word
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 }

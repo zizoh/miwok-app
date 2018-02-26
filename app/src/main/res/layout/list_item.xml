@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/list_item_icon"
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:src="@mipmap/ic_launcher" />
