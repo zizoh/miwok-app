@@ -94,4 +94,13 @@ public class NumbersActivity extends AppCompatActivity {
             mediaPlayer = null;
         }
     }
+
+    /**
+     * Release MediaPlayer resources when a user leaves the app
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mediaPlayer.release();
+    }
 }

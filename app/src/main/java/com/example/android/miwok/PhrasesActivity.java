@@ -23,6 +23,7 @@ public class PhrasesActivity extends AppCompatActivity {
             releaseMediaPlayer();
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,5 +101,14 @@ public class PhrasesActivity extends AppCompatActivity {
             // is not configured to play an audio file at the moment.
             mediaPlayer = null;
         }
+    }
+
+    /**
+     * Release MediaPlayer resources when a user leaves the app
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mediaPlayer.release();
     }
 }
