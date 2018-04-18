@@ -16,59 +16,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
 
-    <!-- Numbers category -->
-    <FrameLayout
+    <android.support.design.widget.TabLayout
+        android:id="@+id/categories_tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_numbers">
+        android:background="@color/primary_color"
+        app:tabTextColor="@color/tab_text_color"
+        app:tabSelectedTextColor="@color/tab_selected_text_color"
+        app:tabIndicatorColor="@color/tab_indicator_color" />
 
-        <TextView
-            android:id="@+id/numbers"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_numbers" />
-    </FrameLayout>
-
-    <!-- Family category -->
-    <FrameLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/categories_viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_family">
+        android:background="@android:color/white" />
 
-        <TextView
-            android:id="@+id/family"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_family" />
-    </FrameLayout>
-
-    <!-- Colors category -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_colors">
-
-        <TextView
-            android:id="@+id/colors"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_colors" />
-    </FrameLayout>
-
-    <!-- Phrases category -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_phrases">
-
-        <TextView
-            android:id="@+id/phrases"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_phrases" />
-    </FrameLayout>
 </LinearLayout>
