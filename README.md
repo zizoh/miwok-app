@@ -20,7 +20,7 @@ This sample uses the Gradle build system. To build this project, use the
 Screenshots
 -------------
 
-<img src="screenshots/1_NumbersCategory.png" height="400" alt="Screenshot"/> <img src="screenshots/1_PhrasesCategory.png" height="400" alt="Screenshot"/>
+<img src="screenshots/1_NumbersCategory.png" height="400" alt="Screenshot"/> <img src="screenshots/2_PhrasesCategory.png" height="400" alt="Screenshot"/>
 
 Support
 -------
